@@ -305,6 +305,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.qcom.bt.sh \
+    init.baseband.sh \
     init.qcom.post_boot.sh
 
 # RenderScript HAL

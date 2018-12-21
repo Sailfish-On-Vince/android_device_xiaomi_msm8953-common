@@ -34,7 +34,11 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Boot animation
+ifneq (,$(filter vince,$(TARGET_DEVICE)))
+TARGET_SCREEN_HEIGHT := 2160
+else
 TARGET_SCREEN_HEIGHT := 1920
+endif
 TARGET_SCREEN_WIDTH := 1080
 
 # Permissions
